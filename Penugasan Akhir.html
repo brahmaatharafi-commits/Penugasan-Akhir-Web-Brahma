@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kabupaten Sidoarjo, Lingkungan Sidoarjo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef3f0;--ink:#0c2a2b;--mute:#4d6663;--card:#fbfdfc;--line:#c9d8d3;--water:#0f6b73;--mangrove:#2f8a58;--mud:#7a6a58;--gold:#d9a02b;--hero:#0b3b3c;--heroink:#eaf4ef;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1716;--ink:#e6efeb;--mute:#9db5af;--card:#12231f;--line:#243b36;--water:#5cc0c8;--mangrove:#6fc78f;--mud:#b3a28d;--gold:#efbc4e;--hero:#071f20;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b1716;--ink:#e6efeb;--mute:#9db5af;--card:#12231f;--line:#243b36;--water:#5cc0c8;--mangrove:#6fc78f;--mud:#b3a28d;--gold:#efbc4e;--hero:#071f20;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 Figtree,system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.08;margin:0}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--hero);z-index:30}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;align-items:center;gap:1rem;padding:.7rem clamp(1rem,4vw,3rem);background:var(--hero);color:var(--heroink)}
+header b{font:700 1.15rem Fraunces,serif;margin-right:auto}
+header a{color:inherit;text-decoration:none;font-size:.95rem;opacity:.85}
+header a:hover{opacity:1;text-decoration:underline;text-underline-offset:4px}
+button{font:inherit;cursor:pointer}
+#theme{background:none;border:1px solid currentColor;color:inherit;border-radius:99px;padding:.25rem .8rem}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+@media(max-width:640px){header a{display:none}}
+.hero{position:relative;background:var(--hero);color:var(--heroink);padding:clamp(3rem,10vw,7rem) clamp(1rem,4vw,3rem) 0;overflow:hidden}
+.hero h1{font-size:clamp(2.6rem,9vw,6.6rem);font-weight:900;max-width:13ch;letter-spacing:-.02em;font-variation-settings:"opsz" 144}
+.hero p{max-width:46ch;font-size:1.2rem;opacity:.9;margin:1.4rem 0 2rem}
+.btn{display:inline-block;background:var(--gold);color:#10201f;border:0;border-radius:6px;padding:.75rem 1.4rem;font-weight:700;text-decoration:none}
+.waves{position:relative;height:200px;margin-top:2rem}
+.waves svg{position:absolute;left:0;bottom:0;width:200%;height:100%}
+.w1{fill:#0f6b73;opacity:.55}.w2{fill:#2f8a58;opacity:.6}.w3{fill:var(--bg)}
+main{max-width:1060px;margin:0 auto;padding:0 clamp(1rem,4vw,2rem)}
+section{padding:clamp(3rem,8vw,5.5rem) 0}
+h2{font-size:clamp(1.9rem,5vw,3.1rem);font-weight:700;max-width:20ch}
+.lead{color:var(--mute);max-width:60ch;margin:1rem 0 0}
+.js .rv{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s}
+.js .rv.in{opacity:1;transform:none}
+.about{display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;align-items:start}
+.about ul{list-style:none;margin:0;padding:0;border-left:4px solid var(--mangrove)}
+.about li{padding:.5rem 0 .5rem 1.2rem;border-bottom:1px solid var(--line)}
+.about li strong{font-family:Fraunces,serif;display:block;font-size:1.2rem}
+@media(max-width:760px){.about,.issues{grid-template-columns:1fr!important}}
+.issues{display:grid;grid-template-columns:260px 1fr;gap:2rem;margin-top:2.2rem}
+.tabs{display:flex;flex-direction:column;gap:.5rem}
+.tab{text-align:left;background:var(--card);border:1px solid var(--line);color:var(--ink);padding:.85rem 1rem;border-radius:4px 22px 4px 22px;transition:.2s}
+.tab[aria-selected="true"]{background:var(--water);border-color:var(--water);color:#fff;transform:translateX(8px)}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:22px 4px 22px 4px;padding:clamp(1.3rem,3vw,2.2rem)}
+.panel h3{font-size:1.8rem;margin-bottom:.7rem}
+.panel p{margin:.6rem 0}
+.panel .act{margin-top:1.1rem;padding:.9rem 1rem;border-left:4px solid var(--gold);background:color-mix(in srgb,var(--gold) 12%,transparent)}
+.pledge{background:var(--hero);color:var(--heroink);border-radius:28px;padding:clamp(1.5rem,4vw,3rem);display:grid;grid-template-columns:1fr 220px;gap:2rem;align-items:center}
+.pledge h2{color:var(--heroink)}
+@media(max-width:760px){.pledge{grid-template-columns:1fr}}
+.habits{margin:1.5rem 0 0;padding:0;list-style:none;display:grid;gap:.5rem}
+.habits label{display:flex;gap:.7rem;align-items:center;padding:.65rem .9rem;border:1px solid rgba(255,255,255,.22);border-radius:10px;cursor:pointer}
+.habits input{width:1.2rem;height:1.2rem;accent-color:var(--gold)}
+.habits label:has(input:checked){background:rgba(111,199,143,.2);border-color:#6fc78f}
+.jar{position:relative;width:170px;height:250px;margin:0 auto;border:4px solid var(--heroink);border-top-width:0;border-radius:0 0 46px 46px;overflow:hidden;background:rgba(255,255,255,.05)}
+.fill{position:absolute;left:0;right:0;bottom:0;height:8%;background:linear-gradient(var(--water),#12525a);transition:height .8s cubic-bezier(.3,.9,.3,1)}
+.fill::before{content:"";position:absolute;left:-10%;top:-12px;width:120%;height:24px;background:var(--water);border-radius:50%;animation:sway 3s ease-in-out infinite alternate}
+@keyframes sway{to{transform:translateX(8%)}}
+.mscore{position:absolute;inset:0;display:grid;place-items:center;font:900 2.6rem Fraunces,serif;color:#fff;text-shadow:0 2px 8px #0008}
+#msg{min-height:3.4em;margin:1rem 0 0}
+.count{font-size:.95rem;opacity:.8;margin-top:.6rem}
+footer{padding:2.5rem clamp(1rem,4vw,3rem);border-top:1px solid var(--line);color:var(--mute);text-align:center;font-size:.95rem}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+  <b>Kabupaten Sidoarjo</b>
+  <a href="#kenali">Kenali</a><a href="#isu">Isu lingkungan</a><a href="#aksi">Aksi harian</a>
+  <button id="theme" type="button" aria-label="Ganti tema terang atau gelap">Tema</button>
+</header>
+
+<div class="hero">
+  <h1>Sidoarjo ini menjaga kita. Kita jaga balik.</h1>
+  <p>Sidoarjo berdiri di atas endapan Sungai Brantas, diapit tambak dan pesisir Selat Madura. Lingkungannya subur, tetapi rentan terhadap banjir, sampah, dan tanah yang terus turun.</p>
+  <a class="btn" href="#aksi">Hitung aksi harianmu</a>
+  <div class="waves" aria-hidden="true">
+    <svg class="lay" data-s=".06" viewBox="0 0 1600 200" preserveAspectRatio="none"><path class="w1" d="M0 90 Q200 30 400 90 T800 90 T1200 90 T1600 90 V200H0Z"/></svg>
+    <svg class="lay" data-s=".12" viewBox="0 0 1600 200" preserveAspectRatio="none"><path class="w2" d="M0 120 Q200 70 400 120 T800 120 T1200 120 T1600 120 V200H0Z"/></svg>
+    <svg class="lay" data-s=".2" viewBox="0 0 1600 200" preserveAspectRatio="none"><path class="w3" d="M0 160 Q200 130 400 160 T800 160 T1200 160 T1600 160 V200H0Z"/></svg>
+  </div>
+</div>
+
+<main>
+  <section id="kenali" class="about">
+    <div class="rv">
+      <h2>Tanah yang dibentuk oleh air</h2>
+      <p class="lead">Hampir seluruh wilayah Sidoarjo datar dan rendah. Itulah sebabnya air menjadi sumber rezeki sekaligus sumber risiko di sini.</p>
+    </div>
+    <ul class="rv">
+      <li><strong>Delta Brantas</strong>Sungai Porong dan Kali Mas membawa sedimen yang membentuk dataran subur.</li>
+      <li><strong>Tambak pesisir</strong>Bandeng dan udang menopang ekonomi warga di Jabon, Sedati, dan Buduran.</li>
+      <li><strong>Mangrove</strong>Akar bakau menahan abrasi dan menjadi rumah bagi ikan, kepiting, dan burung air.</li>
+    </ul>
+  </section>
+
+  <section id="isu">
+    <h2 class="rv">Empat hal yang perlu kita perhatikan</h2>
+    <div class="issues rv">
+      <div class="tabs" role="tablist" aria-label="Isu lingkungan"></div>
+      <div class="panel" role="tabpanel" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section id="aksi">
+    <div class="pledge rv">
+      <div>
+        <h2>Berapa penuh tambak hijaumu hari ini?</h2>
+        <ul class="habits" id="habits"></ul>
+        <p id="msg"></p>
+        <button class="btn" id="pledge" type="button">Saya berkomitmen</button>
+        <p class="count" id="count"></p>
+      </div>
+      <div class="jar" aria-label="Indikator aksi harian"><div class="fill" id="fill"></div><div class="mscore" id="score">0</div></div>
+    </div>
+  </section>
+</main>
+<footer>Halaman bertema lingkungan Sidoarjo, Jawa Timur. </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(function(){
+  $('html').addClass('js');
+
+  /* Tema */
+  var root=document.documentElement;
+  try{var t=localStorage.getItem('sda-theme'); if(t) root.setAttribute('data-theme',t);}catch(e){}
+  $('#theme').on('click',function(){
+    var dark=getComputedStyle(root).colorScheme==='dark'||root.getAttribute('data-theme')==='dark';
+    var next=dark?'light':'dark';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem('sda-theme',next);}catch(e){}
+  });
+
+  /* Gulir halus tanpa mengubah hash */
+  $('a[href^="#"]').on('click',function(e){
+    var $t=$($(this).attr('href'));
+    if(!$t.length) return;
+    e.preventDefault();
+    $('html,body').animate({scrollTop:$t.offset().top-60},600);
+  });
+
+  /* Gelombang bergerak mengikuti gulir */
+  var $lay=$('.lay');
+  $(window).on('scroll',function(){
+    var y=$(window).scrollTop();
+    $lay.each(function(i){
+      var s=parseFloat($(this).data('s'));
+      $(this).css('transform','translateX(-'+((y*s*(i%2?-1:1))%400+(i%2?400:0))+'px)');
+    });
+    reveal();
+  });
+  function reveal(){
+    var b=$(window).scrollTop()+$(window).height()*0.92;
+    $('.rv:not(.in)').each(function(){ if($(this).offset().top<b) $(this).addClass('in'); });
+  }
+  reveal();
+
+  /* Isu lingkungan */
+  var isu=[
+    {n:'Pesisir dan mangrove',h:'Pesisir yang menipis',
+     p:['Garis pantai Sidoarjo bertemu tambak dan muara. Ketika bakau ditebang untuk membuka lahan, ombak dan air pasang lebih mudah menggerus tambak dan permukiman.','Mangrove juga menyimpan karbon dan menjadi tempat pembibitan ikan. Satu pohon yang tumbuh hari ini melindungi tambak puluhan tahun ke depan.'],
+     a:'Tanam bakau bersama kelompok nelayan atau karang taruna setempat, dan rawat bibit yang sudah ditanam.'},
+    {n:'Sungai dan banjir',h:'Sungai yang cepat penuh',
+     p:['Wilayah yang rendah membuat air hujan lambat surut. Saluran yang tersumbat sampah dan sedimen memperparah genangan di musim hujan.','Banjir rob dari laut juga bisa naik bersamaan dengan hujan deras, sehingga air tertahan di permukiman.'],
+     a:'Bersihkan selokan depan rumah setiap pekan dan jangan membuang sampah ke kali.'},
+    {n:'Sampah dan plastik',h:'Sampah yang hanyut ke tambak',
+     p:['Plastik yang dibuang ke selokan akan terbawa arus menuju muara dan tambak. Di sana plastik mengganggu sirkulasi air dan mencemari hasil panen.','Memilah sampah organik dari anorganik di rumah sudah mengurangi beban tempat pembuangan secara nyata.'],
+     a:'Bawa tas dan botol sendiri, pisahkan sampah dapur untuk kompos, dan setorkan plastik ke bank sampah terdekat.'},
+    {n:'Lumpur dan tanah turun',h:'Tanah yang tidak lagi stabil',
+     p:['Semburan lumpur di Porong sejak 2006 mengubah wajah kawasan dan kehidupan ribuan warga. Peristiwa itu juga memicu perhatian pada penurunan muka tanah di sekitarnya.','Pengambilan air tanah berlebihan dapat memperparah penurunan tanah, terutama di wilayah yang sudah rendah.'],
+     a:'Hemat air bersih, tampung air hujan, dan dukung penataan ruang yang menyisakan daerah resapan.'}
+  ];
+  var $tabs=$('.tabs'),$panel=$('.panel');
+  $.each(isu,function(i,d){
+    $('<button class="tab" role="tab" type="button"></button>').text(d.n).attr('data-i',i).appendTo($tabs);
+  });
+  function show(i){
+    var d=isu[i];
+    $('.tab').attr('aria-selected',function(){return $(this).data('i')==i;});
+    $panel.stop(true).fadeTo(120,0,function(){
+      $panel.empty().append($('<h3>').text(d.h));
+      $.each(d.p,function(_,x){$panel.append($('<p>').text(x));});
+      $panel.append($('<div class="act">').append($('<strong>').text('Yang bisa kamu lakukan: ')).append(document.createTextNode(d.a)));
+      $panel.fadeTo(200,1);
+    });
+  }
+  $tabs.on('click','.tab',function(){show($(this).data('i'));});
+  show(0);
+
+  /* Tambak hijau: aksi harian */
+  var habits=[
+    ['Membawa tas belanja dan botol minum sendiri',20],
+    ['Memilah sampah organik dan anorganik',20],
+    ['Membersihkan selokan atau saluran depan rumah',20],
+    ['Menghemat air saat mandi dan mencuci',15],
+    ['Menanam atau merawat satu tanaman',15],
+    ['Memilih jalan kaki, sepeda, atau angkutan umum',10]
+  ];
+  var $ul=$('#habits');
+  $.each(habits,function(i,h){
+    $('<li><label><input type="checkbox"><span></span></label></li>').find('span').text(h[0]).end().find('input').attr('data-p',h[1]).end().appendTo($ul);
+  });
+  var words=[
+    [0,'Tambakmu masih kosong. Centang satu kebiasaan untuk memulai.'],
+    [1,'Awal yang baik. Setiap tetes menambah air bersih di tambakmu.'],
+    [40,'Sudah separuh jalan. Selokan dan sungai mulai merasakannya.'],
+    [70,'Hampir penuh. Tinggal beberapa kebiasaan lagi.'],
+    [100,'Tambakmu penuh. Ajak satu tetangga untuk ikut.']
+  ];
+  function update(){
+    var s=0; $('#habits input:checked').each(function(){s+=+$(this).data('p');});
+    $('#fill').css('height',(8+s*0.88)+'%');
+    $({v:+$('#score').text()}).animate({v:s},{duration:500,step:function(n){$('#score').text(Math.round(n));}});
+    var m=words[0][1]; $.each(words,function(_,w){ if(s>=w[0]) m=w[1]; });
+    $('#msg').text(m);
+  }
+  $ul.on('change','input',update); update();
+
+  var n=0;
+  try{n=+localStorage.getItem('sda-pledge')||0;}catch(e){}
+  function renderCount(){ $('#count').text(n? 'Kamu sudah berkomitmen '+n+' kali di perangkat ini.' : ''); }
+  renderCount();
+  $('#pledge').on('click',function(){
+    n++; try{localStorage.setItem('sda-pledge',n);}catch(e){}
+    renderCount();
+    $(this).text('Terima kasih, lanjutkan besok');
+    $('#msg').text('Komitmen tercatat. Konsisten kecil lebih berarti daripada sekali besar.');
+  });
+});
+</script>
+</body>
+</html>
